@@ -1,0 +1,12 @@
+{
+  "name": "nzuzu-glow-up",
+  "version": "1.0.0",
+  "description": "Site e-commerce NZUZU GLOW UP — Guides beauté naturelle Dr Marie Nzuzi",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
