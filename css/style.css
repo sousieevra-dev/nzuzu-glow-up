@@ -1,0 +1,1167 @@
+/* ============================================
+   NZUZU GLOW UP — Styles principaux
+   Palette : Nude Doré Africain
+   Inspiration : ILIA Beauty + Rebecca Casciano
+   ============================================ */
+
+:root {
+  --fond-principal: #FDFBF7;
+  --fond-secondaire: #F5EDE3;
+  --fond-fonce: #1A1412;
+  --accent-principal: #C8956C;
+  --accent-hover: #B07D56;
+  --accent-secondaire: #D4A27C;
+  --texte-principal: #1A1412;
+  --texte-secondaire: #7A6B5D;
+  --texte-clair: #A89888;
+  --dore: #C8956C;
+  --blanc: #FFFFFF;
+  --etoiles: #C8956C;
+  --ligne: #E8DDD1;
+}
+
+/* Reset */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--fond-principal);
+  color: var(--texte-principal);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.4s ease;
+}
+
+/* Typographie utilitaires */
+.label-dore {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--dore);
+}
+
+.titre-section {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: clamp(32px, 5vw, 48px);
+  color: var(--texte-principal);
+  line-height: 1.2;
+}
+
+.ligne-deco {
+  width: 40px;
+  height: 1px;
+  background: var(--dore);
+  margin: 20px auto 0;
+}
+
+.conteneur {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Boutons */
+.btn-principal {
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 16px 40px;
+  border-radius: 50px;
+  background: var(--accent-principal);
+  color: var(--blanc);
+  border: none;
+  cursor: pointer;
+  transition: background 0.5s ease, transform 0.3s ease;
+}
+
+.btn-principal:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+.btn-secondaire {
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 16px 40px;
+  border-radius: 50px;
+  background: var(--blanc);
+  color: var(--accent-principal);
+  border: none;
+  cursor: pointer;
+  transition: background 0.5s ease, transform 0.3s ease;
+}
+
+.btn-secondaire:hover {
+  background: var(--fond-secondaire);
+  transform: translateY(-1px);
+}
+
+/* Animations au scroll */
+.reveler {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.reveler.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================
+   SECTION 1 — HEADER
+   ============================================ */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 24px 0;
+  transition: background 0.6s ease, padding 0.4s ease, box-shadow 0.4s ease;
+}
+
+.header.scrolled {
+  background: rgba(253, 251, 247, 0.97);
+  padding: 16px 0;
+  box-shadow: 0 1px 0 var(--ligne);
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.logo {
+  margin-bottom: 12px;
+}
+
+.logo-nzuzu {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  color: var(--texte-principal);
+  display: block;
+}
+
+.header.scrolled .logo-nzuzu,
+.header.scrolled .logo-glowup,
+.header.scrolled .nav-link {
+  color: var(--texte-principal);
+}
+
+.logo-glowup {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  color: var(--texte-secondaire);
+  display: block;
+  margin-top: 2px;
+}
+
+.nav-desktop {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.nav-link {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--texte-secondaire);
+  transition: color 0.4s ease;
+}
+
+.nav-link:hover {
+  color: var(--accent-principal);
+}
+
+/* Hamburger mobile */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 24px;
+  top: 28px;
+  z-index: 1001;
+}
+
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background: var(--texte-principal);
+  margin: 5px 0;
+  transition: all 0.4s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(4px, 5px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -5px);
+}
+
+.nav-mobile {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--fond-principal);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  z-index: 999;
+}
+
+.nav-mobile.open {
+  display: flex;
+}
+
+.nav-mobile .nav-link {
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+/* ============================================
+   SECTION 2 — HERO
+   ============================================ */
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(26,20,18,0.45) 0%, rgba(26,20,18,0.1) 50%, transparent 100%);
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  padding: 0 24px;
+  max-width: 700px;
+}
+
+.hero-accroche {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 24px;
+}
+
+.hero-titre {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(36px, 7vw, 68px);
+  font-weight: 400;
+  color: var(--blanc);
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+.hero-sous-titre {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 17px;
+  color: rgba(255,255,255,0.85);
+  max-width: 500px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  animation: rebond 2s ease-in-out infinite;
+}
+
+.scroll-indicator svg {
+  width: 24px;
+  height: 24px;
+  stroke: rgba(255,255,255,0.6);
+}
+
+@keyframes rebond {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
+}
+
+/* ============================================
+   SECTION 3 — BANDEAU CONFIANCE
+   ============================================ */
+.bandeau-confiance {
+  padding: 48px 24px;
+  text-align: center;
+  background: var(--blanc);
+}
+
+.bandeau-confiance .label-dore {
+  margin-bottom: 24px;
+}
+
+.confiance-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
+.confiance-item {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  color: var(--texte-secondaire);
+  padding: 8px 28px;
+  border-right: 1px solid var(--ligne);
+  letter-spacing: 0.5px;
+}
+
+.confiance-item:last-child {
+  border-right: none;
+}
+
+/* ============================================
+   SECTION 4 — LES 3 GUIDES
+   ============================================ */
+.section-guides {
+  padding: 120px 24px;
+  background: var(--fond-principal);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 80px;
+}
+
+.section-header .label-dore {
+  margin-bottom: 16px;
+  display: block;
+}
+
+.grille-guides {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.carte-guide {
+  text-align: center;
+  padding: 40px 24px;
+  border-radius: 12px;
+  transition: box-shadow 0.6s ease;
+  position: relative;
+}
+
+.carte-guide:hover {
+  box-shadow: 0 8px 40px rgba(26,20,18,0.06);
+}
+
+.carte-guide-image-wrap {
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 28px;
+  display: inline-block;
+}
+
+.carte-guide-image {
+  width: 240px;
+  height: 340px;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.carte-guide:hover .carte-guide-image {
+  transform: scale(1.03);
+}
+
+.badge-guide {
+  position: absolute;
+  top: 48px;
+  right: 32px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: var(--accent-principal);
+  color: var(--blanc);
+  padding: 6px 14px;
+  border-radius: 4px;
+}
+
+.carte-guide .label-dore {
+  margin-bottom: 12px;
+  display: block;
+}
+
+.carte-guide-titre {
+  font-family: 'Playfair Display', serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.35;
+  margin-bottom: 16px;
+  color: var(--texte-principal);
+}
+
+.carte-guide-desc {
+  font-size: 15px;
+  color: var(--texte-secondaire);
+  line-height: 1.7;
+  margin-bottom: 24px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prix {
+  margin-bottom: 24px;
+}
+
+.prix-barre {
+  font-size: 15px;
+  color: var(--texte-clair);
+  text-decoration: line-through;
+  margin-right: 8px;
+}
+
+.prix-reel {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: var(--accent-principal);
+  font-weight: 500;
+}
+
+/* ============================================
+   SECTION 5 — AVANT / APRÈS
+   ============================================ */
+.section-resultats {
+  padding: 120px 24px;
+  background: var(--blanc);
+}
+
+.grille-resultats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.carte-resultat {
+  text-align: center;
+}
+
+.resultat-images {
+  display: flex;
+  gap: 4px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.resultat-images .img-wrap {
+  flex: 1;
+  position: relative;
+}
+
+.resultat-images img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.resultat-label {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--blanc);
+  background: rgba(26,20,18,0.4);
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.resultat-nom {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.resultat-detail {
+  font-size: 13px;
+  color: var(--texte-clair);
+  margin-bottom: 6px;
+}
+
+.resultat-quote {
+  font-size: 14px;
+  color: var(--texte-secondaire);
+  font-style: italic;
+}
+
+/* ============================================
+   SECTION 6 — À PROPOS DR MARIE NZUZI
+   ============================================ */
+.section-apropos {
+  padding: 140px 24px;
+  background: var(--fond-principal);
+}
+
+.bio-bloc {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  max-width: 1000px;
+  margin: 0 auto 100px;
+}
+
+.bio-bloc:last-child {
+  margin-bottom: 0;
+}
+
+.bio-bloc.inverse {
+  flex-direction: row-reverse;
+}
+
+.bio-texte {
+  flex: 1;
+}
+
+.bio-image-wrap {
+  flex: 0 0 400px;
+}
+
+.bio-image {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.bio-titre {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.bio-titre-italic {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.3;
+  margin-bottom: 24px;
+}
+
+.bio-paragraphe {
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--texte-secondaire);
+}
+
+.bio-paragraphe + .bio-paragraphe {
+  margin-top: 20px;
+}
+
+/* Crédentiels */
+.credentiels {
+  background: var(--fond-secondaire);
+  padding: 80px 24px;
+  margin-top: 100px;
+  border-radius: 16px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.credentiels-grille {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+
+.credentiel-item .label-dore {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.credentiel-valeur {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--texte-principal);
+}
+
+/* ============================================
+   SECTION 7 — TÉMOIGNAGES
+   ============================================ */
+.section-temoignages {
+  padding: 120px 24px;
+  background: var(--blanc);
+}
+
+/* Témoignage vedette */
+.temoignage-vedette {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 80px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid var(--ligne);
+}
+
+.vedette-citation {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: clamp(22px, 3vw, 30px);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--texte-principal);
+  margin-bottom: 32px;
+}
+
+.vedette-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 12px;
+  object-fit: cover;
+}
+
+.vedette-nom {
+  font-size: 14px;
+  color: var(--texte-principal);
+  margin-bottom: 6px;
+}
+
+.etoiles {
+  color: var(--etoiles);
+  font-size: 14px;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+}
+
+.badge-petit {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border: 1px solid var(--ligne);
+  border-radius: 20px;
+  color: var(--texte-clair);
+}
+
+/* Grille témoignages */
+.grille-temoignages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.carte-temoignage {
+  text-align: center;
+  padding: 32px 20px;
+}
+
+.carte-temoignage .vedette-photo {
+  width: 64px;
+  height: 64px;
+}
+
+.carte-citation {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--texte-secondaire);
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+.carte-nom {
+  font-size: 13px;
+  color: var(--texte-clair);
+  margin-bottom: 6px;
+}
+
+/* Section avant/après — images split */
+.resultat-image-split {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.resultat-image-split img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ============================================
+   SECTION WHATSAPP — Preuves sociales
+   ============================================ */
+.section-whatsapp {
+  padding: 120px 24px;
+  background: var(--fond-secondaire);
+}
+
+.grille-whatsapp {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.carte-whatsapp {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(26,20,18,0.08);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.carte-whatsapp:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 40px rgba(26,20,18,0.12);
+}
+
+.carte-whatsapp img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ============================================
+   SECTION 8 — BANDEAU OFFRE SPÉCIALE
+   ============================================ */
+.bandeau-offre {
+  padding: 56px 24px;
+  background: var(--accent-principal);
+  text-align: center;
+}
+
+.offre-texte {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(18px, 3vw, 24px);
+  font-weight: 400;
+  color: var(--blanc);
+  margin-bottom: 24px;
+}
+
+.offre-texte .prix-barre {
+  color: rgba(255,255,255,0.6);
+}
+
+.offre-texte strong {
+  font-weight: 500;
+}
+
+/* ============================================
+   SECTION 9 — GARANTIE
+   ============================================ */
+.section-garantie {
+  padding: 120px 24px;
+  background: var(--fond-principal);
+  text-align: center;
+}
+
+.garantie-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 24px;
+  color: var(--dore);
+}
+
+.garantie-titre {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.garantie-texte {
+  font-size: 16px;
+  color: var(--texte-secondaire);
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ============================================
+   SECTION 10 — FAQ
+   ============================================ */
+.section-faq {
+  padding: 120px 24px;
+  background: var(--blanc);
+}
+
+.faq-liste {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--ligne);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--texte-principal);
+  text-align: left;
+  line-height: 1.5;
+}
+
+.faq-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin-left: 16px;
+  transition: transform 0.4s ease;
+  color: var(--texte-clair);
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-reponse {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+.faq-reponse-inner {
+  padding: 0 0 28px;
+  font-size: 15px;
+  color: var(--texte-secondaire);
+  line-height: 1.7;
+}
+
+/* ============================================
+   SECTION 11 — CTA FINAL
+   ============================================ */
+.section-cta-final {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.cta-final-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cta-final-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26,20,18,0.35);
+}
+
+.cta-final-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.cta-final-titre {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 400;
+  color: var(--blanc);
+  margin-bottom: 16px;
+}
+
+.cta-final-sous-titre {
+  font-size: 17px;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 40px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================================
+   SECTION 12 — FOOTER
+   ============================================ */
+.footer {
+  background: var(--fond-fonce);
+  padding: 80px 24px 40px;
+  text-align: center;
+}
+
+.footer-logo .logo-nzuzu {
+  color: var(--fond-secondaire);
+  font-size: 20px;
+}
+
+.footer-logo .logo-glowup {
+  color: var(--texte-clair);
+}
+
+.footer-tagline {
+  font-size: 13px;
+  color: var(--texte-clair);
+  margin-top: 8px;
+  margin-bottom: 40px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.footer-nav a {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(245,237,227,0.7);
+  transition: color 0.4s ease;
+}
+
+.footer-nav a:hover {
+  color: var(--accent-principal);
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.footer-social a {
+  color: rgba(245,237,227,0.5);
+  transition: color 0.4s ease;
+}
+
+.footer-social a:hover {
+  color: var(--accent-principal);
+}
+
+.footer-social svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-sep {
+  width: 60px;
+  height: 1px;
+  background: rgba(245,237,227,0.15);
+  margin: 0 auto 32px;
+}
+
+.footer-legal {
+  font-size: 11px;
+  color: rgba(245,237,227,0.4);
+  line-height: 1.8;
+}
+
+.footer-legal .disclaimer {
+  font-size: 10px;
+  opacity: 0.6;
+  margin-top: 8px;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 1024px) {
+  .grille-guides {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .credentiels-grille {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bio-bloc {
+    gap: 48px;
+  }
+  .bio-image-wrap {
+    flex: 0 0 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-desktop { display: none; }
+  .hamburger { display: block; }
+
+  .grille-guides {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .grille-resultats {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+  }
+
+  .resultat-images img {
+    height: 240px;
+  }
+
+  .bio-bloc, .bio-bloc.inverse {
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .bio-image-wrap {
+    flex: auto;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .credentiels-grille {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .grille-temoignages {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  .grille-whatsapp {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+  }
+
+  .confiance-items {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .confiance-item {
+    border-right: none;
+    border-bottom: 1px solid var(--ligne);
+    padding: 12px 0;
+  }
+
+  .confiance-item:last-child {
+    border-bottom: none;
+  }
+
+  .section-guides,
+  .section-resultats,
+  .section-apropos,
+  .section-temoignages,
+  .section-garantie,
+  .section-faq {
+    padding: 80px 20px;
+  }
+
+  .btn-principal, .btn-secondaire {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-titre {
+    font-size: clamp(32px, 8vw, 48px);
+  }
+}
+
+@media (max-width: 480px) {
+  .credentiels-grille {
+    grid-template-columns: 1fr;
+  }
+}
