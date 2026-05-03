@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NZUZU GLOW UP — Guides Beauté Naturelle Africaine par Dr Marie Nzuzi</title>
+<meta name="description" content="Découvre les guides beauté naturels de Dr Marie Nzuzi. Soins ancestraux africains, exercices faciaux et rituels naturels pour révéler l'éclat de ta peau.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400;1,500&family=DM+Sans:ital,wght@0,400;0,500;0,600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- ============================================
+     SECTION 1 — HEADER
+     ============================================ -->
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <span class="logo-nzuzu">NZUZU</span>
+      <span class="logo-glowup">GLOW UP</span>
+    </a>
+    <nav class="nav-desktop">
+      <a href="#guides" class="nav-link">Guides</a>
+      <a href="#resultats" class="nav-link">Résultats</a>
+      <a href="#apropos" class="nav-link">À Propos</a>
+      <a href="#temoignages" class="nav-link">Témoignages</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu de navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Navigation mobile -->
+<nav class="nav-mobile" id="navMobile">
+  <a href="#guides" class="nav-link" onclick="fermerMenu()">Guides</a>
+  <a href="#resultats" class="nav-link" onclick="fermerMenu()">Résultats</a>
+  <a href="#apropos" class="nav-link" onclick="fermerMenu()">À Propos</a>
+  <a href="#temoignages" class="nav-link" onclick="fermerMenu()">Témoignages</a>
+  <a href="#faq" class="nav-link" onclick="fermerMenu()">FAQ</a>
+</nav>
+
+<!-- ============================================
+     SECTION 2 — HERO
+     ============================================ -->
+<section class="hero" id="hero">
+  <!-- IMAGE À REMPLACER : Hero femme africaine belle peau, lumière dorée -->
+  <img src="hero.png" alt="Femme africaine à la peau éclatante" class="hero-image">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-accroche reveler">Beauté Naturelle Africaine</p>
+    <h1 class="hero-titre reveler">Ta Peau Mérite Ce<br>Qu'il Y a de Mieux</h1>
+    <p class="hero-sous-titre reveler">Des guides experts de Dr Marie Nzuzi pour révéler l'éclat naturel de ta peau. Sans produits chimiques. Juste la nature.</p>
+    <a href="#guides" class="btn-principal reveler">Découvrir les guides</a>
+  </div>
+  <div class="scroll-indicator">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round">
+      <path d="M12 5v14M5 12l7 7 7-7"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 3 — BANDEAU CONFIANCE
+     ============================================ -->
+<section class="bandeau-confiance">
+  <p class="label-dore">Elles nous font confiance</p>
+  <div class="confiance-items">
+    <span class="confiance-item">+3000 Femmes</span>
+    <span class="confiance-item">100% Naturel</span>
+    <span class="confiance-item">Résultats en 3 Semaines</span>
+    <span class="confiance-item">Satisfait ou Remboursé</span>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 4 — LES 3 GUIDES
+     ============================================ -->
+<section class="section-guides" id="guides">
+  <div class="section-header reveler">
+    <span class="label-dore">Nos Guides</span>
+    <h2 class="titre-section">Des Secrets de Beauté<br>dans Tes Mains</h2>
+    <div class="ligne-deco"></div>
+  </div>
+
+  <div class="grille-guides">
+    <!-- EBOOK 1 -->
+    <div class="carte-guide reveler">
+      <div class="carte-guide-image-wrap">
+        <!-- IMAGE À REMPLACER : Couverture ebook 1 anti-âge -->
+        <img src="guide-01.png" alt="Guide Comment Rajeunir de 10 Ans" class="carte-guide-image">
+      </div>
+      <span class="label-dore">Best-seller</span>
+      <h3 class="carte-guide-titre">Comment Rajeunir de 10 Ans Sans que Personne ne Sache ton Secret</h3>
+      <p class="carte-guide-desc">Le programme complet pour retrouver un visage ferme, lumineux et rajeuni. Exercices faciaux, masques naturels et routine quotidienne de 10 minutes qui changent tout.</p>
+      <div class="prix">
+        <span class="prix-barre">27€</span>
+        <span class="prix-reel">7,99€</span>
+      </div>
+      <a href="https://nzuzuglowup.shop/prd_10arpn/checkout" class="btn-principal">Je veux ce guide</a>
+    </div>
+
+    <!-- EBOOK 2 -->
+    <div class="carte-guide reveler">
+      <div class="carte-guide-image-wrap">
+        <!-- IMAGE À REMPLACER : Couverture ebook 2 soins naturels -->
+        <img src="guide-02.png" alt="Guide Rajeunir ta Peau Sans Produit Chimique" class="carte-guide-image">
+      </div>
+      <span class="label-dore">Populaire</span>
+      <h3 class="carte-guide-titre">Comment Effacer Taches, Cernes et Cicatrices</h3>
+      <p class="carte-guide-desc">Découvre les méthodes naturelles pour transformer ta peau sans dépenser une fortune chez le dermatologue. Des remèdes ancestraux africains modernisés et validés.</p>
+      <div class="prix">
+        <span class="prix-barre">35€</span>
+        <span class="prix-reel">9,99€</span>
+      </div>
+      <a href="https://nzuzuglowup.shop/prd_jltv4n/checkout" class="btn-principal">Je veux ce guide</a>
+    </div>
+
+    <!-- EBOOK 3 -->
+    <div class="carte-guide reveler">
+      <span class="badge-guide">Programme complet</span>
+      <div class="carte-guide-image-wrap">
+        <!-- IMAGE À REMPLACER : Couverture ebook 3 secrets indiens -->
+        <img src="guide-03.png" alt="Guide Secrets des Femmes Indiennes" class="carte-guide-image">
+      </div>
+      <span class="label-dore">Exclusif</span>
+      <h3 class="carte-guide-titre">Pourquoi les Femmes Indiennes Vieillissent Moins Vite que Toi — Et Comment Copier leur Secret</h3>
+      <p class="carte-guide-desc">Les rituels millénaires des femmes indiennes enfin révélés. Curcuma, huile de coco, massage facial ayurvédique... Tout ce qu'elles font au quotidien et que tu peux reproduire chez toi.</p>
+      <div class="prix">
+        <span class="prix-barre">99€</span>
+        <span class="prix-reel">19,99€</span>
+      </div>
+      <a href="https://nzuzuglowup.shop/prd_vjyx62/checkout" class="btn-principal">Je veux ce guide</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 5 — AVANT / APRÈS
+     ============================================ -->
+<section class="section-resultats" id="resultats">
+  <div class="section-header reveler">
+    <span class="label-dore">Résultats</span>
+    <h2 class="titre-section">Des Transformations<br>Qui Parlent</h2>
+    <div class="ligne-deco"></div>
+  </div>
+
+  <div class="grille-resultats">
+    <!-- Résultat 1 — Awa -->
+    <div class="carte-resultat reveler">
+      <div class="resultat-image-split">
+        <img src="avant-apres-awa.png" alt="Transformation de Awa — avant et après le programme">
+      </div>
+      <p class="resultat-nom">Awa, 34 ans</p>
+      <p class="resultat-detail">4 semaines — Guide 1</p>
+      <p class="resultat-quote">« Teint plus lumineux, traits du visage raffermis »</p>
+    </div>
+
+    <!-- Résultat 2 — Fatou -->
+    <div class="carte-resultat reveler">
+      <div class="resultat-image-split">
+        <img src="avant-apres-fatou.png" alt="Transformation de Fatou — avant et après le programme">
+      </div>
+      <p class="resultat-nom">Fatou, 52 ans</p>
+      <p class="resultat-detail">6 semaines — Guide 2</p>
+      <p class="resultat-quote">« Taches brunes estompées, peau plus uniforme »</p>
+    </div>
+
+    <!-- Résultat 3 — Amina -->
+    <div class="carte-resultat reveler">
+      <div class="resultat-image-split">
+        <img src="avant-apres-amina.png" alt="Transformation de Amina — avant et après le programme">
+      </div>
+      <p class="resultat-nom">Amina, 28 ans</p>
+      <p class="resultat-detail">3 semaines — Guide 3</p>
+      <p class="resultat-quote">« Peau éclatante grâce aux rituels indiens adaptés »</p>
+    </div>
+
+    <!-- Résultat 4 — Mariame -->
+    <div class="carte-resultat reveler">
+      <div class="resultat-image-split">
+        <img src="avant-apres-mariame.png" alt="Transformation de Mariame — avant et après le programme">
+      </div>
+      <p class="resultat-nom">Mariame, 45 ans</p>
+      <p class="resultat-detail">8 semaines — Guide 1</p>
+      <p class="resultat-quote">« Rides atténuées, ovale du visage redessiné »</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 6 — À PROPOS DR MARIE NZUZI
+     ============================================ -->
+<section class="section-apropos" id="apropos">
+
+  <!-- Bloc 1 : L'accueil -->
+  <div class="bio-bloc reveler">
+    <div class="bio-texte">
+      <span class="label-dore">Mon Histoire</span>
+      <h2 class="bio-titre">Salut, Moi c'est<br>Dr Marie Nzuzi.</h2>
+      <p class="bio-paragraphe">Je suis médecin, passionnée par la beauté naturelle et le bien-être des femmes africaines. Mais avant d'être celle qui t'accompagne aujourd'hui, j'ai été celle qui cherchait désespérément des réponses.</p>
+    </div>
+    <div class="bio-image-wrap">
+      <!-- IMAGE À REMPLACER : Portrait Dr Nzuzi chaleureux et souriant -->
+      <img src="dr-nzuzi-portrait.png" alt="Portrait de Dr Marie Nzuzi" class="bio-image">
+    </div>
+  </div>
+
+  <!-- Bloc 2 : Le parcours -->
+  <div class="bio-bloc inverse reveler">
+    <div class="bio-texte">
+      <h3 class="bio-titre-italic">D'Où Tout a Commencé</h3>
+      <p class="bio-paragraphe">Comme beaucoup de femmes, j'ai grandi avec les crèmes éclaircissantes qu'on trouvait partout. Des produits qui promettaient une peau parfaite mais qui la détruisaient silencieusement. J'ai vu les dégâts sur ma peau, sur celle de ma mère, de mes sœurs, de mes amies.</p>
+      <p class="bio-paragraphe">Quand je suis devenue médecin, j'ai compris la science derrière ces dégâts. Et j'ai décidé qu'il était temps de proposer autre chose. Quelque chose de vrai. De naturel. De respectueux de notre peau africaine.</p>
+    </div>
+    <div class="bio-image-wrap">
+      <!-- IMAGE À REMPLACER : Ambiance naturelle végétale -->
+      <img src="dr-nzuzi-parcours.png" alt="Parcours de Dr Marie Nzuzi" class="bio-image">
+    </div>
+  </div>
+
+  <!-- Bloc 3 : La mission -->
+  <div class="bio-bloc reveler">
+    <div class="bio-texte">
+      <h3 class="bio-titre-italic">Ma Mission Aujourd'hui</h3>
+      <p class="bio-paragraphe">J'accompagne les femmes africaines à prendre soin de leur peau avec des méthodes naturelles, accessibles et efficaces. Le beurre de karité, le moringa, le bissap, le baobab — nos ancêtres connaissaient déjà ces trésors. Moi, je les ai étudiés avec un regard médical pour te donner des protocoles simples qui marchent vraiment.</p>
+      <p class="bio-paragraphe">NZUZU GLOW UP, c'est ma façon de mettre cette connaissance entre tes mains. Pas de crèmes hors de prix. Pas de produits chimiques. Juste toi, la nature, et 10 minutes par jour.</p>
+    </div>
+    <div class="bio-image-wrap">
+      <!-- IMAGE À REMPLACER : Dr Nzuzi souriante mission -->
+      <img src="dr-nzuzi-mission.jpg" alt="Mission de Dr Marie Nzuzi" class="bio-image">
+    </div>
+  </div>
+
+  <!-- Bloc 4 : Crédentiels -->
+  <div class="credentiels reveler">
+    <div class="credentiels-grille">
+      <div class="credentiel-item">
+        <span class="label-dore">Expérience</span>
+        <p class="credentiel-valeur">+10 ans de pratique médicale</p>
+      </div>
+      <div class="credentiel-item">
+        <span class="label-dore">Femmes accompagnées</span>
+        <p class="credentiel-valeur">+3000 transformations</p>
+      </div>
+      <div class="credentiel-item">
+        <span class="label-dore">Ingrédient fétiche</span>
+        <p class="credentiel-valeur">Le beurre de karité</p>
+      </div>
+      <div class="credentiel-item">
+        <span class="label-dore">Philosophie</span>
+        <p class="credentiel-valeur">Ta peau est parfaite, nourris-la.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 7 — TÉMOIGNAGES
+     ============================================ -->
+<section class="section-temoignages" id="temoignages">
+  <div class="section-header reveler">
+    <span class="label-dore">Témoignages</span>
+    <h2 class="titre-section">Ce Qu'elles en Disent</h2>
+    <div class="ligne-deco"></div>
+  </div>
+
+  <!-- Témoignage vedette -->
+  <div class="temoignage-vedette reveler">
+    <p class="vedette-citation">« En 3 semaines, ma peau a complètement changé. Mon mari m'a demandé quel était mon secret. Je lui ai dit : du karité et les conseils de Dr Nzuzi. C'est tout. »</p>
+    <!-- IMAGE À REMPLACER : Photo Aminata témoignage -->
+    <img src="aminata.png" alt="Photo de Aminata" class="vedette-photo">
+    <p class="etoiles">★★★★★</p>
+    <p class="vedette-nom">Aminata, 38 ans</p>
+    <span class="badge-petit">Guide 01</span>
+  </div>
+
+  <!-- Grille des 6 témoignages -->
+  <div class="grille-temoignages">
+    <div class="carte-temoignage reveler">
+      <!-- IMAGE À REMPLACER : Photo Fatoumata -->
+      <img src="fatoumata.png" alt="Photo de Fatoumata" class="vedette-photo">
+      <p class="etoiles">★★★★★</p>
+      <p class="carte-citation">« J'ai arrêté les crèmes chimiques il y a 2 mois grâce à ce guide. Ma peau respire enfin. Les taches que j'avais depuis des années commencent à s'estomper. »</p>
+      <p class="carte-nom">Fatoumata, 47 ans</p>
+      <span class="badge-petit">Guide 02</span>
+    </div>
+
+    <div class="carte-temoignage reveler">
+      <!-- IMAGE À REMPLACER : Photo Aïssatou -->
+      <img src="aissatou.png" alt="Photo de Aïssatou" class="vedette-photo">
+      <p class="etoiles">★★★★★</p>
+      <p class="carte-citation">« Les secrets indiens adaptés à notre peau africaine, c'est exactement ce qu'il me fallait ! Le masque au curcuma est devenu mon rituel du dimanche. »</p>
+      <p class="carte-nom">Aïssatou, 29 ans</p>
+      <span class="badge-petit">Guide 03</span>
+    </div>
+
+    <div class="carte-temoignage reveler">
+      <!-- IMAGE À REMPLACER : Photo Bintou -->
+      <img src="bintou.png" alt="Photo de Bintou" class="vedette-photo">
+      <p class="etoiles">★★★★★</p>
+      <p class="carte-citation">« À 55 ans, je pensais que c'était trop tard. Les exercices faciaux m'ont prouvé le contraire. Mon visage est plus ferme, mon cou aussi. Mes filles sont jalouses ! »</p>
+      <p class="carte-nom">Bintou, 55 ans</p>
+      <span class="badge-petit">Guide 01</span>
+    </div>
+
+    <div class="carte-temoignage reveler">
+      <!-- IMAGE À REMPLACER : Photo Djénéba -->
+      <img src="djeneba.png" alt="Photo de Djénéba" class="vedette-photo">
+      <p class="etoiles">★★★★★</p>
+      <p class="carte-citation">« Les remèdes naturels de Dr Nzuzi sont incroyables. J'utilisais des produits à l'hydroquinone depuis 5 ans. Aujourd'hui ma peau se régénère naturellement. »</p>
+      <p class="carte-nom">Djénéba, 33 ans</p>
+      <span class="badge-petit">Guide 02</span>
+    </div>
+
+    <div class="carte-temoignage reveler">
+      <!-- IMAGE À REMPLACER : Photo Mariam -->
+      <img src="mariam.png" alt="Photo de Mariam" class="vedette-photo">
+      <p class="etoiles">★★★★★</p>
+      <p class="carte-citation">« Le chapitre sur les femmes indiennes m'a ouvert les yeux. L'huile de coco + curcuma + massage facial, c'est magique. En 4 semaines, tout le monde me demande ce que j'utilise. »</p>
+      <p class="carte-nom">Mariam, 42 ans</p>
+      <span class="badge-petit">Guide 03</span>
+    </div>
+
+    <div class="carte-temoignage reveler">
+      <!-- IMAGE À REMPLACER : Photo Kadiatou -->
+      <img src="kadiatou.png" alt="Photo de Kadiatou" class="vedette-photo">
+      <p class="etoiles">★★★★★</p>
+      <p class="carte-citation">« J'ai acheté les 3 guides. Le meilleur investissement beauté de ma vie. Moins de 40€ pour des résultats que des crèmes à 100€ ne m'ont jamais donnés. »</p>
+      <p class="carte-nom">Kadiatou, 51 ans</p>
+      <span class="badge-petit">Guide 01</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION WHATSAPP — Preuves sociales
+     ============================================ -->
+<section class="section-whatsapp">
+  <div class="section-header reveler">
+    <span class="label-dore">Messages Reçus</span>
+    <h2 class="titre-section">Elles Nous Écrivent<br>Chaque Jour</h2>
+    <div class="ligne-deco"></div>
+  </div>
+
+  <div class="grille-whatsapp">
+    <div class="carte-whatsapp reveler">
+      <img src="whatsapp-fatou.png" alt="Témoignage WhatsApp de Fatou de Dakar">
+    </div>
+    <div class="carte-whatsapp reveler">
+      <img src="whatsapp-grace.png" alt="Témoignage WhatsApp de Grâce de Kinshasa">
+    </div>
+    <div class="carte-whatsapp reveler">
+      <img src="whatsapp-libreville.png" alt="Témoignage WhatsApp d'une cliente de Libreville">
+    </div>
+    <div class="carte-whatsapp reveler">
+      <img src="whatsapp-isabelle.png" alt="Témoignage WhatsApp d'Isabelle de Montréal">
+    </div>
+    <div class="carte-whatsapp reveler">
+      <img src="whatsapp-valerie.png" alt="Témoignage WhatsApp de Valérie de Genève">
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 8 — BANDEAU OFFRE SPÉCIALE
+     ============================================ -->
+<section class="bandeau-offre">
+  <p class="offre-texte">✨ Le Coffret Secret Glow Up — 3 Guides en 1 : <span class="prix-barre">99€</span> <strong>24,99€</strong> — Économise 34%</p>
+  <a href="https://nzuzuglowup.shop/prd_6wthrg/checkout" class="btn-secondaire">Je veux le coffret</a>
+</section>
+
+<!-- ============================================
+     SECTION 9 — GARANTIE
+     ============================================ -->
+<section class="section-garantie">
+  <div class="reveler">
+    <svg class="garantie-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+      <path d="M9 12l2 2 4-4"/>
+    </svg>
+    <h2 class="garantie-titre">Essaye Sans Risque</h2>
+    <p class="garantie-texte">Tu as 30 jours pour tester nos guides. Si tu n'es pas satisfaite, on te rembourse. Aucune question. Aucune condition. Tu n'as rien à perdre.</p>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 10 — FAQ
+     ============================================ -->
+<section class="section-faq" id="faq">
+  <div class="section-header reveler">
+    <span class="label-dore">FAQ</span>
+    <h2 class="titre-section" style="font-size: clamp(28px, 4vw, 36px);">Des Questions ?</h2>
+  </div>
+
+  <div class="faq-liste">
+    <div class="faq-item reveler">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Ces guides fonctionnent-ils vraiment ?
+        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-reponse">
+        <p class="faq-reponse-inner">Oui. Nos méthodes combinent des remèdes naturels ancestraux africains et asiatiques avec des connaissances médicales modernes. Les exercices faciaux sont basés sur une étude scientifique de l'Université Northwestern. Des milliers de femmes ont obtenu des résultats visibles en quelques semaines.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveler">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Quand vais-je voir des résultats ?
+        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-reponse">
+        <p class="faq-reponse-inner">Les premiers résultats (peau plus douce, teint plus lumineux) apparaissent en 2 à 3 semaines. Les transformations plus profondes (rides atténuées, taches estompées) prennent 4 à 8 semaines de pratique régulière.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveler">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        C'est adapté à ma peau africaine ?
+        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-reponse">
+        <p class="faq-reponse-inner">Absolument. Contrairement à beaucoup de guides créés pour les peaux caucasiennes, nos programmes sont conçus spécifiquement pour les peaux noires et métissées, avec des ingrédients que nos ancêtres utilisaient déjà : karité, moringa, bissap, baobab.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveler">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Les ingrédients sont faciles à trouver ?
+        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-reponse">
+        <p class="faq-reponse-inner">Oui ! Tous les ingrédients sont disponibles au marché local ou en boutique : beurre de karité, curcuma, miel, citron, huile de coco, aloe vera, banane, avocat... Rien d'exotique ou de cher.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveler">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Comment je reçois mon ebook ?
+        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-reponse">
+        <p class="faq-reponse-inner">Immédiatement après ton paiement, tu reçois un email avec ton lien de téléchargement. Tu peux lire ton guide sur téléphone, tablette ou ordinateur.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveler">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Je peux me faire rembourser ?
+        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-reponse">
+        <p class="faq-reponse-inner">Oui, tu bénéficies de notre garantie 30 jours. Si tu n'es pas satisfaite, écris-nous et on te rembourse intégralement.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveler">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        C'est quoi la différence entre les 3 guides ?
+        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-reponse">
+        <p class="faq-reponse-inner">Le Guide 01 est un programme anti-âge complet (exercices + masques + routine). Le Guide 02 se concentre sur l'effacement des taches, cernes et cicatrices avec des ingrédients de ta cuisine. Le Guide 03 révèle les secrets ancestraux indiens adaptés à notre peau africaine. Le Coffret Secret Glow Up réunit les 3 guides à prix réduit pour un système beauté complet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 11 — CTA FINAL
+     ============================================ -->
+<section class="section-cta-final">
+  <!-- IMAGE À REMPLACER : Grande image CTA final beauté africaine -->
+  <img src="hero.png" alt="Révèle ton éclat naturel" class="cta-final-image">
+  <div class="cta-final-overlay"></div>
+  <div class="cta-final-content reveler">
+    <h2 class="cta-final-titre">Prête à Révéler Ton Éclat ?</h2>
+    <p class="cta-final-sous-titre">Rejoins les milliers de femmes qui ont transformé leur peau naturellement.</p>
+    <a href="#guides" class="btn-secondaire">Découvrir les guides</a>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 12 — FOOTER
+     ============================================ -->
+<footer class="footer">
+  <div class="footer-logo">
+    <span class="logo-nzuzu">NZUZU</span>
+    <span class="logo-glowup">GLOW UP</span>
+  </div>
+  <p class="footer-tagline">Révèle l'éclat naturel de ta peau</p>
+
+  <nav class="footer-nav">
+    <a href="#guides">Guides</a>
+    <a href="#resultats">Résultats</a>
+    <a href="#apropos">À Propos</a>
+    <a href="#temoignages">Témoignages</a>
+    <a href="#faq">FAQ</a>
+    <a href="mailto:contact@nzuzuglowup.com">Contact</a>
+  </nav>
+
+  <div class="footer-social">
+    <!-- YouTube -->
+    <a href="https://youtube.com/@drmarienzuzi?si=eXKGl_x8hAJRil4E" target="_blank" rel="noopener" aria-label="YouTube">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+    </a>
+  </div>
+
+  <div class="footer-sep"></div>
+
+  <div class="footer-legal">
+    <p>© 2026 NZUZU GLOW UP — Tous droits réservés</p>
+    <p class="disclaimer">Les résultats peuvent varier. Ces guides ne remplacent pas une consultation médicale.</p>
+  </div>
+</footer>
+
+<!-- ============================================
+     JAVASCRIPT
+     ============================================ -->
+
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
